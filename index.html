@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <form action="https://formspree.io/f/xnnndalr" method="post"></form>
+            <h1 class="title">Job Application</h1>
+            <fieldset class="profile-fieldset">
+                <legend>Profile</legend>
+                <label for="first-name">First name</label><br>
+                    <input type="text" id="first-name" name="first-name" required><br>
+
+                <label for="last-name">Last name</label><br>
+                    <input type="text" name="last-name" id="last-name" required><br>
+                
+                <label for="age">DOB</label><br>
+                <input type="date" name="DOB" id="age"><br>
+            </fieldset>
+            <fieldset class="education-fieldset">
+                <legend>Education</legend>
+                <label for="school">University</label><br>
+                <input type="text" name="University" id="school" required><br>
+                <label for="major">Major</label><br>
+                <input type="text" name="Major" id="major" required><br>
+                <label for="graduate">Graduation date (expected)</label><br>
+                <input type="date" name="Graduation_Date" id="graduate" required><br>
+            </fieldset>
+            <fieldset class="experience">
+                <legend>Cover Letter (Required)</legend>
+                <label for="cover-letter"></label>
+                <textarea name="Cover_Letter" id="cover-letter" cols="60" rows="10" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Upload Resume</legend>
+                <label for="resume-upload"></label>
+                <input type="file" name="resume" id="resume-upload" required>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
